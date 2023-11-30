@@ -21,7 +21,19 @@
    <center>
       <AnchorPane prefHeight="390.0" prefWidth="600.0" style="-fx-background-color: #3E445B;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="421.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToConsoleScene" style="-fx-background-color: #DEDEDE;" text="Proceed to the Effort Log Console" />
+            <TableView fx:id="table" prefHeight="364.0" prefWidth="630.0">
+              <columns>
+                <TableColumn fx:id="number" prefWidth="55.19998013973236" text="Number" />
+                <TableColumn fx:id="date" prefWidth="55.60003662109375" text="Date" />
+                  <TableColumn fx:id="startCol" prefWidth="70.79999542236328" text="Start" />
+                  <TableColumn fx:id="stop" prefWidth="67.5999755859375" text="Stop" />
+                  <TableColumn fx:id="timeCol" prefWidth="62.0" text="Time" />
+                  <TableColumn fx:id="lifeCycle" prefWidth="117.5999755859375" text="Life Cycle Step" />
+                  <TableColumn prefWidth="80.4000244140625" text="Category" />
+                  <TableColumn fx:id="deliverable" prefWidth="118.80001831054688" text="Deliverable" />
+              </columns>
+            </TableView>
+            <Button layoutX="420.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToConsoleScene" style="-fx-background-color: #DEDEDE;" text="Proceed to the Effort Log Console" />
          </children>
       </AnchorPane>
    </center>
